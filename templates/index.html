@@ -3,6 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Tutorial</title>
+    <script>
+        setInterval(function() {
+            location.reload()
+        }, 2000);
+    </script>
 </head>
 <body>
 
@@ -16,22 +21,22 @@
             <td>
                 <a href="http://{{ip}}" target="_blank">{{ip}}</a>
             </td>
-            <td>
-                {{#if client.echo}}Yes{{/if}}
-            </td>
+            <td>{{score}}</td>
         </tr>
         {{/each}}
     </table>
 
     <h1>Your missions</h1>
 
-    <p>
-        1. Answer me "Hello, I'm {your name}" when I reach your home endpoint (/).
-    </p>
+    <p>Start a web server on your machine on port 3000</p>
 
-    <p>
-        2. Answer me "Hello, I'm the /echo endpoint" when I reach your echo endpoint (/echo).
-    </p>
+    <p>Answer "Hello, World!" when accessing your home endpoint</p>
+
+    <p>Create a route at POST /question</p>
+
+    <p>Display request body if any</p>
+
+    <p>Answer questions to earn points!</p>
 
 </body>
 </html>
