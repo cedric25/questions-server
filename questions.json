@@ -1,0 +1,23 @@
+[
+  {
+    "q": "Quel est ton trigramme ?",
+    "p": "Trigramme",
+    "a": ""
+  },
+  {
+    "q": "Quelle est la capitale de la gastronomie Française ?",
+    "a": "Lyon"
+  },
+  {
+    "q": "Combien font {x} plus {y} ?",
+    "a": "plus"
+  },
+  {
+    "q": "Combien font {x} fois {y} ?",
+    "a": "fois"
+  },
+  {
+    "q": "Quel est le nombre en position {x} de la suite de Fibonacci (commençant par 0) ?",
+    "a": "5"
+  }
+]
