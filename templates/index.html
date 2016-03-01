@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tutorial</title>
+</head>
+<body>
+
+    BODY !<br>
+    {{title}}
+
+    <table>
+        {{#each clients}}
+        <tr>
+            <td>{{name}}</td> -
+            <td>
+                <a href="http://{{ip}}" target="_blank">{{ip}}</a>
+            </td>
+            <td>
+                {{#if client.echo}}Yes{{/if}}
+            </td>
+        </tr>
+        {{/each}}
+    </table>
+
+    <h1>Your missions</h1>
+
+    <p>
+        1. Answer me "Hello, I'm {your name}" when I reach your home endpoint (/).
+    </p>
+
+    <p>
+        2. Answer me "Hello, I'm the /echo endpoint" when I reach your echo endpoint (/echo).
+    </p>
+
+</body>
+</html>
