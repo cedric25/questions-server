@@ -1,8 +1,7 @@
 [
   {
     "q": "Quel est ton trigramme ?",
-    "p": "Trigramme",
-    "a": ""
+    "p": "Trigramme"
   },
   {
     "q": "Quelle est la capitale de la gastronomie Française ?",
@@ -17,7 +16,6 @@
     "a": "fois"
   },
   {
-    "q": "Quel est le nombre en position 1 de la suite de Fibonacci (commençant par 0) ?",
-    "a": "5"
+    "q": "Quel est le nombre en position 1 de la suite de Fibonacci (commençant par 0) ?"
   }
 ]
