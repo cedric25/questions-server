@@ -77,7 +77,7 @@ server.register([Inert, Vision], (err) => {
  */
 function initClients() {
   for (var client of clients) {
-    client.score = 0;
+    client.score = '';
   }
 }
 
@@ -121,7 +121,7 @@ function askQuestions(client) {
     if (!error && response.statusCode == 200) {
       if (body && body.toLowerCase() === question.a.toLowerCase()) {
         console.log(client.name + ' --> Good one!');
-        client.score++;
+        client.score += '-';
         displayScores();
       }
     }
