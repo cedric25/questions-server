@@ -1,0 +1,20 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "server.js"
+  },
+  "author": "cedric.nicoloso@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "handlebars": "^4.0.5",
+    "hapi": "^13.0.0",
+    "hoek": "^3.0.4",
+    "inert": "^3.2.0",
+    "path": "^0.12.7",
+    "request": "^2.69.0",
+    "vision": "^4.0.1"
+  }
+}
