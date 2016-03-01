@@ -8,7 +8,7 @@ const Vision = require('vision');
 const request = require('request');
 
 const clients = require('./clients.json');
-const questions = require('./questions.json');
+const generateQuestion = require('./generateQuestion.js');
 
 const refreshInterval = 3000;
 
@@ -126,30 +126,6 @@ function askQuestions(client) {
       }
     }
   });
-}
-
-const maxNumber = 100;
-
-/**
- *
- */
-function generateQuestion(client) {
-  let random = Math.floor(Math.random() * questions.length);
-  let question = JSON.parse(JSON.stringify(questions[random]));
-
-  if (question.q.indexOf('{x}') !== -1) {
-    let number = Math.floor(Math.random() * maxNumber);
-    question.q = question.q.replace('{x}', number);
-  }
-  if (question.q.indexOf('{y}') !== -1) {
-    let number = Math.floor(Math.random() * maxNumber);
-    question.q = question.q.replace('{y}', number);
-  }
-  if (question.p === 'Trigramme') {
-    question.a = client.name;
-  }
-
-  return question;
 }
 
 /**

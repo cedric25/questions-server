@@ -9,15 +9,15 @@
     "a": "Lyon"
   },
   {
-    "q": "Combien font {x} plus {y} ?",
+    "q": "Combien font 1 plus 1 ?",
     "a": "plus"
   },
   {
-    "q": "Combien font {x} fois {y} ?",
+    "q": "Combien font 1 fois 1 ?",
     "a": "fois"
   },
   {
-    "q": "Quel est le nombre en position {x} de la suite de Fibonacci (commençant par 0) ?",
+    "q": "Quel est le nombre en position 1 de la suite de Fibonacci (commençant par 0) ?",
     "a": "5"
   }
 ]
