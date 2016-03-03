@@ -2,17 +2,24 @@
 
 const Hapi = require('hapi');
 const Path = require('path');
-const Hoek = require('hoek');
-const Inert = require('inert');
-const Vision = require('vision');
 const request = require('request');
 
-const clients = require('./clients.json');
-const generateQuestion = require('./generateQuestion.js');
+// Node utilities shared amongst the extended hapi universe
+const Hoek = require('hoek');
+
+// Static file and directory handlers
+const Inert = require('inert');
+
+// Templates rendering support
+const Vision = require('vision');
+
+// List of clients
+const clients = require('./server/clients.json');
+
+const generateQuestion = require('./server/generateQuestion.js');
 
 const refreshInterval = 3000;
 
-// Create a server with a host and port
 const server = new Hapi.Server({
   connections: {
     routes: {
@@ -47,8 +54,6 @@ server.register([Inert, Vision], (err) => {
     method: 'GET',
     path: '/',
     handler: function (request, reply) {
-      //return reply("Hello, I'm Hapi!");
-      //reply.file('index.html');
       reply.view('index', { clients: clients });
     }
   });
